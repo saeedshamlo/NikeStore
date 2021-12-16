@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <com.sevenlearn.nike.view.NikeImageView
+        android:id="@+id/productIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundedCornerRadius="6dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/productTitleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:gravity="clip_vertical|right"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textAppearance="?textAppearanceBody1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productIv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="عنوان محصول" />
+
+    <TextView
+        android:id="@+id/currentPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="1,251,000 تومان"
+        android:textAppearance="?textAppearanceBody1"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/favoriteBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_favorite"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_favorites" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="موجود در انبار نایک استور"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/darkGray"
+        app:layout_constraintBottom_toTopOf="@+id/currentPriceTv"
+        app:layout_constraintStart_toStartOf="@+id/productTitleTv"
+        app:layout_constraintTop_toBottomOf="@+id/productTitleTv" />
+
+    <LinearLayout
+        android:id="@+id/linerViews"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/currentPriceTv"
+        app:layout_constraintStart_toEndOf="@+id/productIv"
+        app:layout_constraintTop_toTopOf="@+id/currentPriceTv">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            android:paddingTop="1dp"
+            app:srcCompat="@drawable/ic_show"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/viewsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="+500" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

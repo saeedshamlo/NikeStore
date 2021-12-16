@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "539526513302",
+    "project_id": "nikestrore-e90bc",
+    "storage_bucket": "nikestrore-e90bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539526513302:android:488bcd991611b39bb538b7",
+        "android_client_info": {
+          "package_name": "com.sevenlearn.nike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539526513302-2ma3e5tdos00fvc1ia3r6hebas22fug4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClS1enLnrGrezrOsOGx068Z9bchbJ4ppA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539526513302-2ma3e5tdos00fvc1ia3r6hebas22fug4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
