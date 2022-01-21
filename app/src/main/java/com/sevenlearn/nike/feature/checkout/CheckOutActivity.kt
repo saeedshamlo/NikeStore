@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.item_purchase_detail.*
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
-class CheckOutActivity : AppCompatActivity() {
+class  CheckOutActivity : AppCompatActivity() {
     val viewModel:CheckOutViewModel by viewModel {
         val uri:Uri? = intent.data
         if(uri!=null){

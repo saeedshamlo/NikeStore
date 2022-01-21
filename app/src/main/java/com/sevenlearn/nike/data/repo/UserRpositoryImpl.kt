@@ -8,8 +8,8 @@ import com.sevenlearn.nike.data.repo.source.UserRemoteDataSource
 import io.reactivex.Completable
 
 class UserRpositoryImpl(
-    val userLocalDataSource: UserDateSource,
-    val userRemoteDataSource: UserDateSource
+    private val userLocalDataSource: UserDateSource,
+    private val userRemoteDataSource: UserDateSource
 ) : UserRepository {
 
     override fun login(username: String, password: String): Completable {

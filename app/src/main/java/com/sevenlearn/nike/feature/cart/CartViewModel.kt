@@ -52,7 +52,7 @@ class CartViewModel(val cartRepository: CartRepository) : NikeViewModel() {
             .doAfterSuccess {
                 calculateAndPublishPurchaseDetail()
 
-                val cartItemCount =EventBus.getDefault().getStickyEvent(CartItemCount::class.java)
+                val cartItemCount = EventBus.getDefault().getStickyEvent(CartItemCount::class.java)
                 cartItemCount?.let {
                     it.count -= cartItem.count
                     EventBus.getDefault().postSticky(it)
@@ -70,7 +70,7 @@ class CartViewModel(val cartRepository: CartRepository) : NikeViewModel() {
         return cartRepository.changeCount(cartItem.cart_item_id, ++cartItem.count)
             .doAfterSuccess {
                 calculateAndPublishPurchaseDetail()
-                val cartItemCount =EventBus.getDefault().getStickyEvent(CartItemCount::class.java)
+                val cartItemCount = EventBus.getDefault().getStickyEvent(CartItemCount::class.java)
                 cartItemCount?.let {
                     it.count +=1
                     EventBus.getDefault().postSticky(it)
